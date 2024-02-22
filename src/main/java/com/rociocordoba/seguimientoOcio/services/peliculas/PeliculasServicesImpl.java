@@ -3,10 +3,12 @@ package com.rociocordoba.seguimientoOcio.services.peliculas;
 import com.rociocordoba.seguimientoOcio.persistance.entities.Peliculas;
 import com.rociocordoba.seguimientoOcio.persistance.repository.PeliculasRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class PeliculasServicesImpl implements PeliculasServices{
     @Autowired
     PeliculasRepository peliculasRepository;

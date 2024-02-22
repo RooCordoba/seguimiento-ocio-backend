@@ -3,10 +3,12 @@ package com.rociocordoba.seguimientoOcio.services.juegos;
 import com.rociocordoba.seguimientoOcio.persistance.entities.Juegos;
 import com.rociocordoba.seguimientoOcio.persistance.repository.JuegosRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class JuegosServicesImpl implements JuegosServices{
     @Autowired
     JuegosRepository juegosRepository;

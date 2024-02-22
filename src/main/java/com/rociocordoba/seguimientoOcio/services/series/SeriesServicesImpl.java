@@ -3,10 +3,12 @@ package com.rociocordoba.seguimientoOcio.services.series;
 import com.rociocordoba.seguimientoOcio.persistance.entities.Series;
 import com.rociocordoba.seguimientoOcio.persistance.repository.SeriesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class SeriesServicesImpl implements SeriesServices{
     @Autowired
     SeriesRepository seriesRepository;
